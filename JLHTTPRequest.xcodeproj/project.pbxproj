@@ -1,0 +1,241 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		039843D7165A5CF0004FD6CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039843D6165A5CF0004FD6CD /* Foundation.framework */; };
+		039843DC165A5CF0004FD6CD /* JLHTTPRequest.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 039843DB165A5CF0004FD6CD /* JLHTTPRequest.h */; };
+		039843DE165A5CF1004FD6CD /* JLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 039843DD165A5CF1004FD6CD /* JLHTTPRequest.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		039843D1165A5CF0004FD6CD /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				039843DC165A5CF0004FD6CD /* JLHTTPRequest.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		039843D3165A5CF0004FD6CD /* libJLHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		039843D6165A5CF0004FD6CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		039843DA165A5CF0004FD6CD /* JLHTTPRequest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLHTTPRequest-Prefix.pch"; sourceTree = "<group>"; };
+		039843DB165A5CF0004FD6CD /* JLHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPRequest.h; sourceTree = "<group>"; };
+		039843DD165A5CF1004FD6CD /* JLHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPRequest.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		039843D0165A5CF0004FD6CD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039843D7165A5CF0004FD6CD /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		039843C8165A5CF0004FD6CD = {
+			isa = PBXGroup;
+			children = (
+				039843D8165A5CF0004FD6CD /* JLHTTPRequest */,
+				039843D5165A5CF0004FD6CD /* Frameworks */,
+				039843D4165A5CF0004FD6CD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		039843D4165A5CF0004FD6CD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				039843D3165A5CF0004FD6CD /* libJLHTTPRequest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		039843D5165A5CF0004FD6CD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				039843D6165A5CF0004FD6CD /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		039843D8165A5CF0004FD6CD /* JLHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				039843DB165A5CF0004FD6CD /* JLHTTPRequest.h */,
+				039843DD165A5CF1004FD6CD /* JLHTTPRequest.m */,
+				039843D9165A5CF0004FD6CD /* Supporting Files */,
+			);
+			path = JLHTTPRequest;
+			sourceTree = "<group>";
+		};
+		039843D9165A5CF0004FD6CD /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				039843DA165A5CF0004FD6CD /* JLHTTPRequest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		039843D2165A5CF0004FD6CD /* JLHTTPRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 039843E1165A5CF1004FD6CD /* Build configuration list for PBXNativeTarget "JLHTTPRequest" */;
+			buildPhases = (
+				039843CF165A5CF0004FD6CD /* Sources */,
+				039843D0165A5CF0004FD6CD /* Frameworks */,
+				039843D1165A5CF0004FD6CD /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLHTTPRequest;
+			productName = JLHTTPRequest;
+			productReference = 039843D3165A5CF0004FD6CD /* libJLHTTPRequest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		039843CA165A5CF0004FD6CD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Joyfl;
+			};
+			buildConfigurationList = 039843CD165A5CF0004FD6CD /* Build configuration list for PBXProject "JLHTTPRequest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 039843C8165A5CF0004FD6CD;
+			productRefGroup = 039843D4165A5CF0004FD6CD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				039843D2165A5CF0004FD6CD /* JLHTTPRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		039843CF165A5CF0004FD6CD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				039843DE165A5CF1004FD6CD /* JLHTTPRequest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		039843DF165A5CF1004FD6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		039843E0165A5CF1004FD6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		039843E2165A5CF1004FD6CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JLHTTPRequest.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLHTTPRequest/JLHTTPRequest-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		039843E3165A5CF1004FD6CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JLHTTPRequest.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLHTTPRequest/JLHTTPRequest-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		039843CD165A5CF0004FD6CD /* Build configuration list for PBXProject "JLHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039843DF165A5CF1004FD6CD /* Debug */,
+				039843E0165A5CF1004FD6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		039843E1165A5CF1004FD6CD /* Build configuration list for PBXNativeTarget "JLHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				039843E2165A5CF1004FD6CD /* Debug */,
+				039843E3165A5CF1004FD6CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 039843CA165A5CF0004FD6CD /* Project object */;
+}
