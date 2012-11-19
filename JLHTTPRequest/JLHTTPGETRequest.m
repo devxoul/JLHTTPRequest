@@ -16,7 +16,11 @@
 	if( params )
 	{
 		for( id key in params )
-			paramString = [paramString stringByAppendingFormat:@"%@=%@&", key, [params objectForKey:key]];
+		{
+			if( paramString.length > 0 )
+				paramString = [paramString stringByAppendingFormat:@"&"];
+			paramString = [paramString stringByAppendingFormat:@"%@=%@", key, [params objectForKey:key]];
+		}
 		
 		paramString = [paramString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	}

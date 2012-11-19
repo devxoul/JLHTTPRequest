@@ -12,6 +12,7 @@
 		0398441C165A5FB1004FD6CD /* JLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0398441B165A5FB1004FD6CD /* JLHTTPRequest.m */; };
 		03984427165A62F7004FD6CD /* JLHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984426165A62F7004FD6CD /* JLHTTPResponse.m */; };
 		0398442A165A63EC004FD6CD /* JLHTTPGETRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */; };
+		03984443165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -38,6 +39,8 @@
 		03984426165A62F7004FD6CD /* JLHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPResponse.m; sourceTree = "<group>"; };
 		03984428165A63EC004FD6CD /* JLHTTPGETRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPGETRequest.h; sourceTree = "<group>"; };
 		03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPGETRequest.m; sourceTree = "<group>"; };
+		03984441165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPFormEncodedRequest.h; sourceTree = "<group>"; };
+		03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPFormEncodedRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 				0398441B165A5FB1004FD6CD /* JLHTTPRequest.m */,
 				03984428165A63EC004FD6CD /* JLHTTPGETRequest.h */,
 				03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */,
+				03984441165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.h */,
+				03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */,
 				03984425165A62F7004FD6CD /* JLHTTPResponse.h */,
 				03984426165A62F7004FD6CD /* JLHTTPResponse.m */,
 				039843D9165A5CF0004FD6CD /* Supporting Files */,
@@ -156,6 +161,7 @@
 				0398441C165A5FB1004FD6CD /* JLHTTPRequest.m in Sources */,
 				03984427165A62F7004FD6CD /* JLHTTPResponse.m in Sources */,
 				0398442A165A63EC004FD6CD /* JLHTTPGETRequest.m in Sources */,
+				03984443165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

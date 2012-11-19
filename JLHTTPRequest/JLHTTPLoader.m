@@ -34,12 +34,9 @@
 	if( loading || queue.count == 0 ) return;
 
 	JLHTTPRequest *request = [queue objectAtIndex:0];
-//	if( [delegate responseToSelector:] [delegate shouldLoadWithToken:request] )
-	{
-		[[[NSURLConnection alloc] initWithRequest:request.URLRequest delegate:self] autorelease];
-		[request release];
-		loading = YES;
-	}
+	[[[NSURLConnection alloc] initWithRequest:request.URLRequest delegate:self] autorelease];
+	[request release];
+	loading = YES;
 }
 
 
@@ -77,8 +74,6 @@
 	statusCode = httpResponse.statusCode;
 	responseHeader = [httpResponse.allHeaderFields retain];
 	responseData.length = 0;
-	
-//	_cookies = [[NSHTTPCookie cookiesWithResponseHeaderFields:responseHeader forURL:response.URL] retain];
 }
 
 - (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
@@ -93,6 +88,8 @@
 		NSLog( @"Loading queue is empty!" );
 		return;
 	}
+	
+	loading = NO;
 	
 	JLHTTPRequest *request = [[queue objectAtIndex:0] retain];
 	[queue removeObjectAtIndex:0];

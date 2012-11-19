@@ -10,7 +10,7 @@
 
 @implementation JLHTTPRequest
 
-@synthesize url;
+@synthesize url, method;
 
 - (id)init
 {
@@ -30,12 +30,7 @@
 
 - (NSURLRequest *)URLRequest
 {
-	NSMutableURLRequest *request = [[NSMutableURLRequest alloc] init];
-	
-	// set cookies
-	[request setAllHTTPHeaderFields:[NSHTTPCookie requestHeaderFieldsWithCookies:cookies]];
-	
-	return request;
+	return nil;
 }
 
 @end

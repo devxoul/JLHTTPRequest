@@ -11,11 +11,12 @@
 @interface JLHTTPRequest : NSObject
 {
 	NSString *url;
+	NSString *method;
 	NSMutableDictionary *params;
-	NSArray *cookies;
 }
 
 @property (nonatomic, retain) NSString *url;
+@property (nonatomic, retain) NSString *method;
 
 - (void)setParam:(id)value forKey:(id<NSCopying>)key;
 //- (void)setKey:(id<NSCopying>)key andParam:(id)value;
