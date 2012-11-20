@@ -9,5 +9,5 @@
 #import "JLHTTPResponse.h"
 
 @implementation JLHTTPResponse
-@synthesize url, statusCode, headers, body;
+@synthesize requestId, url, statusCode, headers, body;
 @end

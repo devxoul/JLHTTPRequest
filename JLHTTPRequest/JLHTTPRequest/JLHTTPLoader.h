@@ -7,9 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-
-@class JLHTTPRequest;
-@class JLHTTPResponse;
+#import "JLHTTPRequest.h"
+#import "JLHTTPGETRequest.h"
+#import "JLHTTPFormEncodedRequest.h"
+#import "JLHTTPResponse.h"
+//@class JLHTTPRequest;
+//@class JLHTTPResponse;
 @protocol JLHTTPLoaderDelegate;
 
 @interface JLHTTPLoader : NSObject

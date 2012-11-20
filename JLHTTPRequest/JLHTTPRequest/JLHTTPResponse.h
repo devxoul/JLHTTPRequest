@@ -10,12 +10,14 @@
 
 @interface JLHTTPResponse : NSObject
 {
+	NSInteger requestId;
 	NSString *url;
 	NSInteger statusCode;
 	NSDictionary *headers;
 	NSString *body;
 }
 
+@property (nonatomic, assign) NSInteger requestId;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, assign) NSInteger statusCode;
 @property (nonatomic, retain) NSDictionary *headers;

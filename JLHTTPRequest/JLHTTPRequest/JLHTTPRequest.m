@@ -10,7 +10,7 @@
 
 @implementation JLHTTPRequest
 
-@synthesize url, method;
+@synthesize requestId, url, method;
 
 - (id)init
 {

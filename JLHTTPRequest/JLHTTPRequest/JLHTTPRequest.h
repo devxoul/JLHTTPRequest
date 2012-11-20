@@ -10,11 +10,13 @@
 
 @interface JLHTTPRequest : NSObject
 {
+	NSInteger requestId;
 	NSString *url;
 	NSString *method;
 	NSMutableDictionary *params;
 }
 
+@property (nonatomic, assign) NSInteger requestId;
 @property (nonatomic, retain) NSString *url;
 @property (nonatomic, retain) NSString *method;
 
