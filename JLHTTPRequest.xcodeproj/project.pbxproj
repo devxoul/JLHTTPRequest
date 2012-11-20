@@ -8,11 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		039843D7165A5CF0004FD6CD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 039843D6165A5CF0004FD6CD /* Foundation.framework */; };
-		039843E6165A5E7F004FD6CD /* JLHTTPLoader.m in Sources */ = {isa = PBXBuildFile; fileRef = 039843E5165A5E7F004FD6CD /* JLHTTPLoader.m */; };
-		0398441C165A5FB1004FD6CD /* JLHTTPRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0398441B165A5FB1004FD6CD /* JLHTTPRequest.m */; };
-		03984427165A62F7004FD6CD /* JLHTTPResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984426165A62F7004FD6CD /* JLHTTPResponse.m */; };
-		0398442A165A63EC004FD6CD /* JLHTTPGETRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */; };
-		03984443165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,16 +26,16 @@
 		039843D3165A5CF0004FD6CD /* libJLHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		039843D6165A5CF0004FD6CD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		039843DA165A5CF0004FD6CD /* JLHTTPRequest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLHTTPRequest-Prefix.pch"; sourceTree = "<group>"; };
-		039843E4165A5E7F004FD6CD /* JLHTTPLoader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPLoader.h; sourceTree = "<group>"; };
-		039843E5165A5E7F004FD6CD /* JLHTTPLoader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPLoader.m; sourceTree = "<group>"; };
-		0398441A165A5FB1004FD6CD /* JLHTTPRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPRequest.h; sourceTree = "<group>"; };
-		0398441B165A5FB1004FD6CD /* JLHTTPRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPRequest.m; sourceTree = "<group>"; };
-		03984425165A62F7004FD6CD /* JLHTTPResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPResponse.h; sourceTree = "<group>"; };
-		03984426165A62F7004FD6CD /* JLHTTPResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPResponse.m; sourceTree = "<group>"; };
-		03984428165A63EC004FD6CD /* JLHTTPGETRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPGETRequest.h; sourceTree = "<group>"; };
-		03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPGETRequest.m; sourceTree = "<group>"; };
-		03984441165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JLHTTPFormEncodedRequest.h; sourceTree = "<group>"; };
-		03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JLHTTPFormEncodedRequest.m; sourceTree = "<group>"; };
+		0398444B165B6074004FD6CD /* JLHTTPFormEncodedRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JLHTTPFormEncodedRequest.h; path = JLHTTPRequest/JLHTTPFormEncodedRequest.h; sourceTree = "<group>"; };
+		0398444C165B6074004FD6CD /* JLHTTPFormEncodedRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JLHTTPFormEncodedRequest.m; path = JLHTTPRequest/JLHTTPFormEncodedRequest.m; sourceTree = "<group>"; };
+		0398444D165B6074004FD6CD /* JLHTTPGETRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JLHTTPGETRequest.h; path = JLHTTPRequest/JLHTTPGETRequest.h; sourceTree = "<group>"; };
+		0398444E165B6074004FD6CD /* JLHTTPGETRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JLHTTPGETRequest.m; path = JLHTTPRequest/JLHTTPGETRequest.m; sourceTree = "<group>"; };
+		0398444F165B6074004FD6CD /* JLHTTPLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JLHTTPLoader.h; path = JLHTTPRequest/JLHTTPLoader.h; sourceTree = "<group>"; };
+		03984450165B6074004FD6CD /* JLHTTPLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JLHTTPLoader.m; path = JLHTTPRequest/JLHTTPLoader.m; sourceTree = "<group>"; };
+		03984451165B6074004FD6CD /* JLHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JLHTTPRequest.h; path = JLHTTPRequest/JLHTTPRequest.h; sourceTree = "<group>"; };
+		03984452165B6074004FD6CD /* JLHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JLHTTPRequest.m; path = JLHTTPRequest/JLHTTPRequest.m; sourceTree = "<group>"; };
+		03984453165B6074004FD6CD /* JLHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = JLHTTPResponse.h; path = JLHTTPRequest/JLHTTPResponse.h; sourceTree = "<group>"; };
+		03984454165B6074004FD6CD /* JLHTTPResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = JLHTTPResponse.m; path = JLHTTPRequest/JLHTTPResponse.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,16 +78,16 @@
 		039843D8165A5CF0004FD6CD /* JLHTTPRequest */ = {
 			isa = PBXGroup;
 			children = (
-				039843E4165A5E7F004FD6CD /* JLHTTPLoader.h */,
-				039843E5165A5E7F004FD6CD /* JLHTTPLoader.m */,
-				0398441A165A5FB1004FD6CD /* JLHTTPRequest.h */,
-				0398441B165A5FB1004FD6CD /* JLHTTPRequest.m */,
-				03984428165A63EC004FD6CD /* JLHTTPGETRequest.h */,
-				03984429165A63EC004FD6CD /* JLHTTPGETRequest.m */,
-				03984441165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.h */,
-				03984442165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m */,
-				03984425165A62F7004FD6CD /* JLHTTPResponse.h */,
-				03984426165A62F7004FD6CD /* JLHTTPResponse.m */,
+				0398444B165B6074004FD6CD /* JLHTTPFormEncodedRequest.h */,
+				0398444C165B6074004FD6CD /* JLHTTPFormEncodedRequest.m */,
+				0398444D165B6074004FD6CD /* JLHTTPGETRequest.h */,
+				0398444E165B6074004FD6CD /* JLHTTPGETRequest.m */,
+				0398444F165B6074004FD6CD /* JLHTTPLoader.h */,
+				03984450165B6074004FD6CD /* JLHTTPLoader.m */,
+				03984451165B6074004FD6CD /* JLHTTPRequest.h */,
+				03984452165B6074004FD6CD /* JLHTTPRequest.m */,
+				03984453165B6074004FD6CD /* JLHTTPResponse.h */,
+				03984454165B6074004FD6CD /* JLHTTPResponse.m */,
 				039843D9165A5CF0004FD6CD /* Supporting Files */,
 			);
 			path = JLHTTPRequest;
@@ -157,11 +152,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				039843E6165A5E7F004FD6CD /* JLHTTPLoader.m in Sources */,
-				0398441C165A5FB1004FD6CD /* JLHTTPRequest.m in Sources */,
-				03984427165A62F7004FD6CD /* JLHTTPResponse.m in Sources */,
-				0398442A165A63EC004FD6CD /* JLHTTPGETRequest.m in Sources */,
-				03984443165A6CB3004FD6CD /* JLHTTPFormEncodedRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
