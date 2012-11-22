@@ -31,6 +31,8 @@
 - (void)addRequest:(JLHTTPRequest *)request;
 - (void)startLoading;
 
++ (void)loadAsyncFromURL:(NSString *)url completion:(void (^)(NSData *data))completion;
+
 @end
 
 
