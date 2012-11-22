@@ -25,7 +25,6 @@
 		paramString = [paramString stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
 	}
 	
-	NSLog( @"%@", [url stringByAppendingFormat:@"?%@", paramString] );
 	return [[NSMutableURLRequest requestWithURL:[NSURL URLWithString:[url stringByAppendingFormat:@"?%@", paramString]]] retain];
 }
 
