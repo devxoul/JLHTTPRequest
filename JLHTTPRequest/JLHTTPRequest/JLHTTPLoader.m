@@ -94,24 +94,59 @@
 	JLHTTPRequest *request = [[queue objectAtIndex:0] retain];
 	[queue removeObjectAtIndex:0];
 	
-	JLHTTPResponse *response = [[JLHTTPResponse alloc] init];	
+	JLHTTPResponse *response = [[JLHTTPResponse alloc] init];
+	response.requestId = request.requestId;
 	response.statusCode = statusCode;
 	response.headers = responseHeader;
 	response.body = [[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding];
-	[delegate loaderDidFinishLoading:response];
 	[request release];
 	
 	statusCode = 0;
 	responseHeader = nil;
 	[responseHeader release];
 	
-	[self startLoading];
+	[delegate loaderDidFinishLoading:response];
+	
+	if( queue.count > 0 )
+		[self startLoading];
 }
 
 - (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
 {
 	NSLog( @"Loading Error : %@", error );
 //	loading = NO;
+}
+
+
+#pragma mark -
+#pragma mark Async
+
++ (void)loadAsyncFromURL:(NSString *)url completion:(void (^)(NSData *data))completion
+{
+	dispatch_async( dispatch_get_global_queue( 0, 0 ), ^{
+		NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+		
+		if( data == nil )
+			return;
+		
+		dispatch_async( dispatch_get_main_queue(), ^{
+			completion( data );
+		} );
+	} );
+}
+
++ (NSString *)loadStringAsyncFromURL:(NSString *)url completion:(void (^)(NSData *data))completion
+{
+	dispatch_async( dispatch_get_global_queue( 0, 0 ), ^{
+		NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+		
+		if( data == nil )
+			return;
+		
+		dispatch_async( dispatch_get_main_queue(), ^{
+			completion( data );
+		} );
+	} );
 }
 
 @end
