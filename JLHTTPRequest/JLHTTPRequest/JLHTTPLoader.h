@@ -27,9 +27,12 @@
 }
 
 @property (retain, nonatomic) id<JLHTTPLoaderDelegate> delegate;
+@property (retain, nonatomic, getter = currentRequest) JLHTTPRequest *currentRequest;
 
 - (void)addRequest:(JLHTTPRequest *)request;
 - (void)startLoading;
+
+- (JLHTTPRequest *)currentRequest;
 
 + (void)loadAsyncFromURL:(NSString *)url completion:(void (^)(NSData *data))completion;
 

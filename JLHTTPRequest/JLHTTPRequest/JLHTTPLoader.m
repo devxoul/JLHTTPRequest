@@ -39,6 +39,12 @@
 	loading = YES;
 }
 
+- (JLHTTPRequest *)currentRequest
+{
+	if( queue.count == 0 ) return nil;
+	return [queue objectAtIndex:0];
+}
+
 
 #pragma mark -
 #pragma mark NSURLConnection
