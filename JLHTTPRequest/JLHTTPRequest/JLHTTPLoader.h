@@ -10,9 +10,9 @@
 #import "JLHTTPRequest.h"
 #import "JLHTTPGETRequest.h"
 #import "JLHTTPFormEncodedRequest.h"
+#import "JLHTTPMultipartRequest.h"
 #import "JLHTTPResponse.h"
-//@class JLHTTPRequest;
-//@class JLHTTPResponse;
+
 @protocol JLHTTPLoaderDelegate;
 
 @interface JLHTTPLoader : NSObject
