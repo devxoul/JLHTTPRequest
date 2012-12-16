@@ -31,6 +31,7 @@
 
 - (void)addRequest:(JLHTTPRequest *)request;
 - (void)startLoading;
+- (BOOL)hasRequestId:(NSInteger)requestId;
 
 - (JLHTTPRequest *)currentRequest;
 

@@ -39,6 +39,14 @@
 	loading = YES;
 }
 
+- (BOOL)hasRequestId:(NSInteger)requestId
+{
+	for( JLHTTPRequest *req in queue )
+		if( req.requestId == requestId )
+			return YES;
+	return NO;
+}
+
 - (JLHTTPRequest *)currentRequest
 {
 	if( queue.count == 0 ) return nil;
