@@ -33,6 +33,7 @@
 
 - (void)cacheObject:(id)object forKey:(id<NSCopying>)key
 {
+	if( !object ) return;
 	[_caches setObject:object forKey:key];
 }
 
