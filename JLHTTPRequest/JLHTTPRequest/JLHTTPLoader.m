@@ -9,6 +9,7 @@
 #import "JLHTTPLoader.h"
 #import "JLHTTPRequest.h"
 #import "JLHTTPResponse.h"
+#import "JLHTTPCacheManager.h"
 
 @implementation JLHTTPLoader
 
@@ -137,8 +138,16 @@
 
 + (void)loadAsyncFromURL:(NSString *)url completion:(void (^)(NSData *data))completion
 {
-	dispatch_async( dispatch_get_global_queue( 0, 0 ), ^{
+	dispatch_async( dispatch_get_global_queue( DISPATCH_QUEUE_PRIORITY_HIGH, 0 ), ^{
+		id cachedData = [[JLHTTPCacheManager manager] cachedObjectForKey:url];
+		if( cachedData )
+		{
+			completion( cachedData );
+			return;
+		}
+		
 		NSData *data = [[NSData alloc] initWithContentsOfURL:[NSURL URLWithString:url]];
+		[[JLHTTPCacheManager manager] cacheObject:data forKey:url];
 		
 		dispatch_async( dispatch_get_main_queue(), ^{
 			completion( data );
