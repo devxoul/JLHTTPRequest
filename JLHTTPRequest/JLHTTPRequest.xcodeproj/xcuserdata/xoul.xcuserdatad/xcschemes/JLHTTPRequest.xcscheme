@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "039843D2165A5CF0004FD6CD"
+               BlueprintIdentifier = "0386EC0B168868A900574EEF"
                BuildableName = "libJLHTTPRequest.a"
                BlueprintName = "JLHTTPRequest"
                ReferencedContainer = "container:JLHTTPRequest.xcodeproj">

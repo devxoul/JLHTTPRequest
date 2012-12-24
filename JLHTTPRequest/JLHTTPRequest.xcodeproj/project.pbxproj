@@ -1,0 +1,269 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0386EC10168868A900574EEF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0386EC0F168868A900574EEF /* Foundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0386EC0A168868A900574EEF /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0386EC0C168868A900574EEF /* libJLHTTPRequest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libJLHTTPRequest.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		0386EC0F168868A900574EEF /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		0386EC13168868A900574EEF /* JLHTTPRequest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JLHTTPRequest-Prefix.pch"; sourceTree = "<group>"; };
+		0386EC1E168868C200574EEF /* JLHTTPCacheManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPCacheManager.h; sourceTree = "<group>"; };
+		0386EC1F168868C200574EEF /* JLHTTPCacheManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPCacheManager.m; sourceTree = "<group>"; };
+		0386EC20168868C200574EEF /* JLHTTPFormEncodedRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPFormEncodedRequest.h; sourceTree = "<group>"; };
+		0386EC21168868C200574EEF /* JLHTTPFormEncodedRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPFormEncodedRequest.m; sourceTree = "<group>"; };
+		0386EC22168868C200574EEF /* JLHTTPGETRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPGETRequest.h; sourceTree = "<group>"; };
+		0386EC23168868C200574EEF /* JLHTTPGETRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPGETRequest.m; sourceTree = "<group>"; };
+		0386EC24168868C200574EEF /* JLHTTPLoader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPLoader.h; sourceTree = "<group>"; };
+		0386EC25168868C200574EEF /* JLHTTPLoader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPLoader.m; sourceTree = "<group>"; };
+		0386EC26168868C200574EEF /* JLHTTPMultipartRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPMultipartRequest.h; sourceTree = "<group>"; };
+		0386EC27168868C200574EEF /* JLHTTPMultipartRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPMultipartRequest.m; sourceTree = "<group>"; };
+		0386EC28168868C200574EEF /* JLHTTPRequest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPRequest.h; sourceTree = "<group>"; };
+		0386EC29168868C200574EEF /* JLHTTPRequest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPRequest.m; sourceTree = "<group>"; };
+		0386EC2A168868C200574EEF /* JLHTTPResponse.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = JLHTTPResponse.h; sourceTree = "<group>"; };
+		0386EC2B168868C200574EEF /* JLHTTPResponse.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = JLHTTPResponse.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0386EC09168868A900574EEF /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0386EC10168868A900574EEF /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0386EC01168868A900574EEF = {
+			isa = PBXGroup;
+			children = (
+				0386EC11168868A900574EEF /* JLHTTPRequest */,
+				0386EC0E168868A900574EEF /* Frameworks */,
+				0386EC0D168868A900574EEF /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		0386EC0D168868A900574EEF /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0386EC0C168868A900574EEF /* libJLHTTPRequest.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0386EC0E168868A900574EEF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0386EC0F168868A900574EEF /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0386EC11168868A900574EEF /* JLHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0386EC1D168868C200574EEF /* JLHTTPRequest */,
+				0386EC12168868A900574EEF /* Supporting Files */,
+			);
+			path = JLHTTPRequest;
+			sourceTree = "<group>";
+		};
+		0386EC12168868A900574EEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0386EC13168868A900574EEF /* JLHTTPRequest-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		0386EC1D168868C200574EEF /* JLHTTPRequest */ = {
+			isa = PBXGroup;
+			children = (
+				0386EC1E168868C200574EEF /* JLHTTPCacheManager.h */,
+				0386EC1F168868C200574EEF /* JLHTTPCacheManager.m */,
+				0386EC20168868C200574EEF /* JLHTTPFormEncodedRequest.h */,
+				0386EC21168868C200574EEF /* JLHTTPFormEncodedRequest.m */,
+				0386EC22168868C200574EEF /* JLHTTPGETRequest.h */,
+				0386EC23168868C200574EEF /* JLHTTPGETRequest.m */,
+				0386EC24168868C200574EEF /* JLHTTPLoader.h */,
+				0386EC25168868C200574EEF /* JLHTTPLoader.m */,
+				0386EC26168868C200574EEF /* JLHTTPMultipartRequest.h */,
+				0386EC27168868C200574EEF /* JLHTTPMultipartRequest.m */,
+				0386EC28168868C200574EEF /* JLHTTPRequest.h */,
+				0386EC29168868C200574EEF /* JLHTTPRequest.m */,
+				0386EC2A168868C200574EEF /* JLHTTPResponse.h */,
+				0386EC2B168868C200574EEF /* JLHTTPResponse.m */,
+			);
+			path = JLHTTPRequest;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0386EC0B168868A900574EEF /* JLHTTPRequest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0386EC1A168868A900574EEF /* Build configuration list for PBXNativeTarget "JLHTTPRequest" */;
+			buildPhases = (
+				0386EC08168868A900574EEF /* Sources */,
+				0386EC09168868A900574EEF /* Frameworks */,
+				0386EC0A168868A900574EEF /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JLHTTPRequest;
+			productName = JLHTTPRequest;
+			productReference = 0386EC0C168868A900574EEF /* libJLHTTPRequest.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0386EC03168868A900574EEF /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = Joyfl;
+			};
+			buildConfigurationList = 0386EC06168868A900574EEF /* Build configuration list for PBXProject "JLHTTPRequest" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 0386EC01168868A900574EEF;
+			productRefGroup = 0386EC0D168868A900574EEF /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0386EC0B168868A900574EEF /* JLHTTPRequest */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0386EC08168868A900574EEF /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0386EC18168868A900574EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		0386EC19168868A900574EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0386EC1B168868A900574EEF /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JLHTTPRequest.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLHTTPRequest/JLHTTPRequest-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		0386EC1C168868A900574EEF /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/JLHTTPRequest.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JLHTTPRequest/JLHTTPRequest-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0386EC06168868A900574EEF /* Build configuration list for PBXProject "JLHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0386EC18168868A900574EEF /* Debug */,
+				0386EC19168868A900574EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0386EC1A168868A900574EEF /* Build configuration list for PBXNativeTarget "JLHTTPRequest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0386EC1B168868A900574EEF /* Debug */,
+				0386EC1C168868A900574EEF /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0386EC03168868A900574EEF /* Project object */;
+}
